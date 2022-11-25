@@ -1,0 +1,111 @@
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-items: center;
+        align-items: center;
+        column-gap: 0.6rem;
+    }
+    
+    .home h1 {
+        font-size: 8rem;
+        text-align: center;
+        color: #f84982;
+    }
+    
+    .home h1>span {
+        color: #fff;
+    }
+    
+    .home h3 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    
+    img.clock {
+        width: 100px;
+        height: 100px;
+        transform: rotate(25deg);
+        position: absolute;
+        top: 22px;
+        opacity: 0.5;
+        right: 39px;
+        animation: clock 3s 5s ease-in-out infinite;
+    }
+    
+    img.alarm {
+        width: 100px;
+        height: 100px;
+        transform: rotate(25deg);
+        position: absolute;
+        bottom: 22px;
+        opacity: 0.5;
+        left: 39px;
+        animation: alarm 3s 5s ease-in-out infinite;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .home h1 {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        .home h3 {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .home h1 {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        .home h3 {
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .home h1 {
+            font-size: 5rem;
+            font-weight: 700;
+        }
+        .home h3 {
+            font-size: 3rem;
+            font-weight: 400;
+        }
+    }
+    
+    @keyframes clock {
+        0% {
+            transform: translateX(6px);
+        }
+        25% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(0px);
+        }
+        100% {
+            transform: translateX(6px);
+        }
+    }
+    
+    @keyframes alarm {
+        0% {
+            transform: translateX(-6px);
+        }
+        25% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(0px);
+        }
+        100% {
+            transform: translateX(-6px);
+        }
+    }
+

@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap");
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+
+/*  Pre Css  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* PRE CSS */
+
+body,
+button,
+input,
+select {
+    font-family: "Red Rose", cursive !important;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+a :active,
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+
+/* REUSABLE CSS */
+
+.section {
+    padding: 7rem 1rem;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        padding: 0 1.6rem;
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    column-gap: 0.6rem;
+}
+
+.button {
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1.4rem 4rem;
+    border-radius: 1rem;
+    background-color: #f84982;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    scale: 1;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: rgba(248, 73, 131, 0.459);
+    scale: 1.1;
+}
+
+.button:active {
+    scale: 0.9;
+}
